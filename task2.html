@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #e91e63;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        #about {
+            text-align: center;
+            background-image: url('your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            border-radius: 10px;
+            color: #fff;
+            position: relative;
+        }
+
+        #about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        #about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #e91e63;
+            position: relative;
+            z-index: 1;
+        }
+
+        #about h2, #about p {
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            color: #e91e63;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #skills ul li {
+            background: #333;
+            color: #fff;
+            margin: 10px;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        #skills ul li:hover {
+            transform: scale(1.05);
+            background-color: #e91e63;
+        }
+
+        #projects .project {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        #projects .project:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #projects .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        #resume a {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #e91e63;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        #resume a:hover {
+            background-color: #c2185b;
+        }
+
+        #hobbies {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        #hobbies h2 {
+            color: #e91e63;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #hobbies p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        #contact ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #contact ul li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        footer a {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #f06292;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 1.5rem;
+            color: #e91e63;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f06292;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio - CodSoft</h1>
+        <p>An outlook of my current achievements</p>
+    </header>
+
+    <section id="about">
+        <img src="https://lh3.googleusercontent.com/gg/AJIvXisQvKX5bYFqAH6RlAWFWxSGgmKRHeP-gCe_fS5IsTSQstdv-N6Sy41T9wxJ-I7uLj2XogYMBhOhVzdyOpHPIwrGW2ALSzlD1DxzXKfjJ4PVSivm06BkcLRVn8t3EGGNDpLowuC7Dh7WzUedJ8enrlWTwycuQb8A-KXigpAFWWXUsILJh63J" alt="Your Name">
+        <h2>About Me</h2>
+        <p>My name is Hoisala, CSE student in JSS STU.I am a passionate Full Stack Developer with experience in building web and mobile applications using JavaScript, React.js, Node.js, and more.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>HTML/CSS</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Personal Finance Tracker</h3>
+            <p>A Personal Finance Tracker is an application designed to help users manage their financial activities by tracking income, expenses, and savings. Users can categorize their transactions, visualize their spending habits through graphs, and set budget limits to achieve their financial goals. This project can enhance understanding of data management and user interface design.</p>
+        </div>
+        <div class="project">
+            <h3>Travel Planning App</h3>
+            <p>The Travel Planning App assists users in organizing their travel itineraries by suggesting destinations and activities based on their preferences. It allows for collaborative planning with friends or family, making the travel experience more enjoyable and organized. This project emphasizes user interface design and the integration of travel-related APIs.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="your-resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Here's what I do when I don't grind coding. I am an exceptional beatboxer, strategic and competitive gamer, explore various genres of music and movies/series.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li>Email: myportfolio@gmail.com</li>
+            <li>Phone: 987654321</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hoisala.V.Raj All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/your-github/" target="_blank">GitHub</a>
+            <a href="https://twitter.com/your-twitter/" target="_blank">Twitter</a>
+        </div>
+        <a href="#">Back to top</a>
+    </footer>
+</body>
+</html>

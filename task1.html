@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Digital Agency</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header h1 {
+            float: left;
+            font-size: 1.8em;
+            color: #fff;
+            margin: 0;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 30px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            color: #f76b1c;
+        }
+
+        .btn-nav {
+            background-color: #f76b1c;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-nav:hover {
+            background-color: #ff7b3a;
+        }
+
+        .hero {
+            background: url('https://img.freepik.com/free-photo/rendering-abstract-futuristic-background-with-glowing-neon-blue-orange-lights_181624-19807.jpg?w=1060&t=st=1725469769~exp=1725470369~hmac=c11790db3b141bc3980bd36bb49d9beef721c6af48b431c1dacf0d6c41376d1f') no-repeat center center/cover;
+            color: #fff;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fff;
+            background-color: #f76b1c;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 15px;
+            font-size: 1.1em;
+        }
+
+        .btn:hover {
+            background-color: #ff7b3a;
+        }
+
+        .features {
+            background: linear-gradient(to right, #f76b1c, #ff77a8);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .features .feature-box {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .features h3 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .features p {
+            font-size: 1.1em;
+        }
+
+        .about,
+        .services {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .about h2,
+        .services h2 {
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            text-transform: uppercase;
+        }
+
+        .about p,
+        .services p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .services .service-box {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+        }
+
+        .services .service-box img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            nav ul {
+                float: none;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .features .feature-box,
+            .services .service-box {
+                width: 90%;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>CodSoft Landing Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="btn-nav">Buy Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Sleek landing page representation</h2>
+            <p>Designed to make the landing page simple yet effective for all types of users</p>
+            <a href="#" class="btn">Discover More</a>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <h3>Launch Your Business</h3>
+                <p>Transform your vision into reality with our end-to-end business launch solutions.</p>
+            </div>
+            <div class="feature-box">
+                <h3>24/7 Online Support</h3>
+                <p>Our expert team is available around the clock to assist you with all your needs.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Efficient Time Management</h3>
+                <p>Maximize productivity and efficiency with our advanced time management tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>A CS student who intends to obtain an internship certificate to boost his career</p>
+            <p>Set out to voyage the saturated ocean of corporate capitalists in the hopes to survive the deep trenches</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS34YxnXHmIIzR-CAjjrJRtIpUChFm6ka1Rdw&s" alt="User Experience">
+                <p>Landing Page</p>
+            </div>
+            <div class="service-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhNS0dp-f9AgxNo7zEuharatKHAsV18_9wA&s" alt="Creative Design">
+                <p>Portfolio</p>
+            </div>
+            <div class="service-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV0roc9_--1c-o082NaiO7TTTCsJpSsEr5Bw&s" alt="Retina Ready">
+                <p>Calculator</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Codsoft Landing Page. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
